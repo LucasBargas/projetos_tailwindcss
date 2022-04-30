@@ -627,7 +627,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(24 215 96 / var(--tw-text-opacity));
 }
 
-@media (min-width: 820px) {
+@media (min-width: 1024px) {
   .lg\:block {
     display: block;
   }
