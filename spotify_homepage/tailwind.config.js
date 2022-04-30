@@ -8,7 +8,7 @@ module.exports = {
       },
 
       maxWidth: {
-        '8xl': '75rem'
+        '8xl': '73.125rem'
       },
 
       colors: {
