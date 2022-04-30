@@ -38,6 +38,14 @@ module.exports = {
         '9xl': '9rem'
       }
     },
+
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '820px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    }
   },
   plugins: [],
 }
