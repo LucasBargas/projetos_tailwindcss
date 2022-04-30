@@ -4,10 +4,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
   <title>Spotify Homepage - Lucas Bargas</title>
 </head>
 <body>
-  <p class="bg-slate-700 inline-block">Olá</p>
+  <header class="bg-black py-3">
+    <div class="app-container">
+      <div class="flex justify-between items-center text-white">
+        <figure>
+          <a href="index.html">
+            <img class="inline-block h-10" src="assets/imgs/spotify_logo.png" alt="Spotify Logo">
+          </a>
+        </figure>
+
+        <div class="flex items-center">
+          <nav class="lg:block hidden">
+            <ul class="flex items-center">
+              <li>
+                <a class="inline-block text-white font-bold py-4 px-5 hover:text-hoverspt" href="#premium">
+                  Premium
+                </a>
+              </li>
+  
+              <li>
+                <a class="inline-block text-white font-bold py-4 px-5 hover:text-hoverspt" href="#suporte">
+                  Suporte
+                </a>
+              </li>
+  
+              <li>
+                <a class="inline-block text-white font-bold py-4 px-5 hover:text-hoverspt" href="#baixar">
+                  Baixar
+                </a>
+              </li>
+            </ul>
+          </nav>
+  
+          <div class="flex items-center gap-3 lg:gap-0 ml-4 relative after:content-[''] after:h-4 after:w-px after:bg-white after:absolute after:left-0 after:top-1/2 after:-translate-y-1/2 after:hidden after:lg:block">
+            <figure class="ml-8 cursor-pointer flex items-center gap-3 hover:text-hoverspt">
+              <img class="inline-block h-11 w-11 rounded-full" src="assets/imgs/user_photo.png" alt="User Photo">
+              <span class="font-bold hidden lg:block">Perfil</span>
+              <i class="bi bi-chevron-down text-xs hidden lg:block"></i>
+            </figure>
+
+            <button><i class="bi bi-list text-white text-2xl block lg:hidden"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 </body>
 </html>
