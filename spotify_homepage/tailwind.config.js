@@ -21,7 +21,9 @@ module.exports = {
         'purple-main': '#2D46B9',
         'green-main': '#1ED760',
         'pink': '#ffcdd2',
-        'red': '#d83519' 
+        'red': '#d83519',
+        'gray': '#919496',
+        'dark-gray': '#222326' 
       },
 
       backgroundImage: {

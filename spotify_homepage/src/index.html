@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <title>Spotify Homepage - Lucas Bargas</title>
 </head>
 <body>
@@ -87,8 +88,91 @@
     </section>
   </main>
 
-  <footer>
-    <p>olá</p>
+  <footer class="bg-black pt-20 pb-12">
+    <div class="app-container">
+      <div class="text-white flex flex-col lg:flex-row md:block lg:flex lg:justify-between">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-14">
+          <div>
+            <figure>
+              <a href="index.html">
+                <img class="inline-block h-7 lg:h-10" src="assets/imgs/spotify_logo.png" alt="Spotify Logo">
+              </a>
+            </figure>
+          </div>
+  
+          <div class="flex flex-col md:flex-row gap-12 lg:gap-14">
+            <div class="md:flex-1 lg:pt-4">
+              <h3 class="text-gray text-xs font-bold uppercase mb-4">Empresa</h3>
+              <nav>
+                <ul class="flex flex-col">
+                  <li><a class="inline-block font-medium py-2 hover:text-hoverspt" href="#sobre">Sobre</a></li>
+                  <li><a class="inline-block font-medium py-2 hover:text-hoverspt" href="#empregos">Empregos</a></li>
+                  <li><a class="inline-block font-medium py-2 hover:text-hoverspt" href="#for-the-record">For the Record</a></li>
+                </ul>
+              </nav>
+            </div>
+    
+            <div class="md:flex-1 lg:pt-4">
+              <h3 class="text-gray text-xs font-bold uppercase mb-4">Comunidades</h3>
+              <nav>
+                <ul class="flex flex-col">
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#para-artistas">Para Artistas</a>
+                  </li>
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#desenvolvedores">Desenvolvedores</a>
+                  </li>
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#publicidade">Publicidade</a>
+                  </li>
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#investidores">Investidores</a>
+                  </li>
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#fornecedores">Fornecedores</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+    
+            <div class="md:flex-1 lg:pt-4">
+              <h3 class="text-gray text-xs font-bold uppercase mb-4">Links Úteis</h3>
+              <nav>
+                <ul class="flex flex-col">
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#suporte">Suporte</a>
+                  </li>
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#player-da-web">Player da Web</a>
+                  </li>
+                  <li>
+                    <a class="inline-block font-medium py-2 hover:text-hoverspt" href="#aplicativo-movel-gratis">Aplicativo móvel grátis</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-28 lg:pt-4 flex gap-4">
+          <figure class="flex items-center justify-center cursor-pointer w-11 h-11 rounded-full bg-dark-gray hover:text-hoverspt">
+            <i class="bi bi-instagram text-xl"></i>
+          </figure>
+
+          <figure class="flex items-center justify-center cursor-pointer w-11 h-11 rounded-full bg-dark-gray hover:text-hoverspt">
+            <i class="bi bi-twitter text-xl"></i>
+          </figure>
+
+          <figure class="flex items-center justify-center cursor-pointer w-11 h-11 rounded-full bg-dark-gray hover:text-hoverspt">
+            <i class="fa-brands fa-facebook-f text-xl"></i>
+          </figure>
+        </div>
+      </div>
+
+      <div class="pt-8 text-white opacity-80 text-center text-sm">
+        <p class="leading-6">Esta aplicação web é uma réplica desenvolvida por <a class="font-bold hover:underline" target="_blank" href="https://projetoslucasbargas.com/" rel="noopener noreferrer">Lucas Bargas</a> com base no layout da página inicial do <a class="font-bold hover:underline" target="_blank" href="https://www.spotify.com/br/" rel="noopener noreferrer">Spotify</a>. Porém, toda a codificação é própria.</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
