@@ -496,6 +496,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.button {
+  display: inline-block;
+  border-radius: 9999px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 .relative {
   position: relative;
 }
@@ -506,6 +534,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-8 {
   margin-left: 2rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -532,12 +568,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
+.h-97 {
+  height: 80vh;
+}
+
 .w-8 {
   width: 2rem;
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -561,6 +605,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-pink {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 205 210 / var(--tw-bg-opacity));
+}
+
+.bg-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 53 25 / var(--tw-bg-opacity));
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -574,6 +628,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-xs {
@@ -593,6 +655,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-red {
+  --tw-text-opacity: 1;
+  color: rgb(216 53 25 / var(--tw-text-opacity));
 }
 
 .after\:absolute::after {
@@ -647,6 +714,35 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(24 215 96 / var(--tw-text-opacity));
 }
 
+@media (min-width: 390px) {
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
+  .md\:h-98 {
+    height: 75vh;
+  }
+
+  .md\:text-9xl {
+    font-size: 5rem;
+  }
+
+  .md\:font-semibold {
+    font-weight: 600;
+  }
+
+  .md\:leading-11 {
+    line-height: 5.25rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:block {
     display: block;
@@ -664,6 +760,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 2.75rem;
   }
 
+  .lg\:h-99 {
+    height: 50vh;
+  }
+
   .lg\:w-11 {
     width: 2.75rem;
   }
@@ -675,5 +775,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .after\:lg\:block::after {
     content: var(--tw-content);
     display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:h-100 {
+    height: 80vh;
   }
 }
