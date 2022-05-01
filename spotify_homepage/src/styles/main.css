@@ -507,8 +507,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .button:hover {
@@ -544,6 +542,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -570,6 +576,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-97 {
   height: 80vh;
+}
+
+.h-480 {
+  height: 480px;
 }
 
 .w-8 {
@@ -615,6 +625,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(216 53 25 / var(--tw-bg-opacity));
 }
 
+.bg-purple-main {
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 70 185 / var(--tw-bg-opacity));
+}
+
+.bg-green-main {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 215 96 / var(--tw-bg-opacity));
+}
+
+.bg-spotify-theme-moblie {
+  background-image: url('../assets/imgs/bursts_mobile.svg');
+}
+
+.bg-181\% {
+  background-size: auto 181%;
+}
+
+.bg-banner-mobile {
+  background-position: center center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -648,8 +684,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .text-white {
@@ -660,6 +705,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-red {
   --tw-text-opacity: 1;
   color: rgb(216 53 25 / var(--tw-text-opacity));
+}
+
+.text-green-main {
+  --tw-text-opacity: 1;
+  color: rgb(30 215 96 / var(--tw-text-opacity));
+}
+
+.text-purple-main {
+  --tw-text-opacity: 1;
+  color: rgb(45 70 185 / var(--tw-text-opacity));
 }
 
 .after\:absolute::after {
@@ -726,12 +781,46 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 2.75rem;
   }
 
+  .md\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .md\:mt-9 {
+    margin-top: 2.25rem;
+  }
+
+  .md\:mb-11 {
+    margin-bottom: 2.75rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
   .md\:h-98 {
     height: 75vh;
   }
 
+  .md\:h-600 {
+    height: 600px;
+  }
+
+  .md\:pt-124 {
+    padding-top: 124px;
+  }
+
   .md\:text-9xl {
     font-size: 5rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:font-semibold {
@@ -781,5 +870,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1280px) {
   .xl\:h-100 {
     height: 80vh;
+  }
+
+  .xl\:bg-spotify-theme {
+    background-image: url('../assets/imgs/bursts.svg');
+  }
+
+  .xl\:bg-100\% {
+    background-size: auto 100%;
+  }
+
+  .xl\:bg-banner {
+    background-position: right center;
+  }
+
+  .xl\:text-left {
+    text-align: left;
   }
 }

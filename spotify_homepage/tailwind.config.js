@@ -3,12 +3,13 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        '14': '3.5rem',
-        '125px': '125px',
         '97': '80vh',
         '98': '75vh',
         '99': '50vh',
         '100': '80vh',
+        '124': '124px',
+        '600': '600px',
+        '480': '480px',
       },
 
       maxWidth: {
@@ -18,24 +19,24 @@ module.exports = {
       colors: {
         'hoverspt': '#18D760',
         'purple-main': '#2D46B9',
-        'gree-main': '#1ED760',
+        'green-main': '#1ED760',
         'pink': '#ffcdd2',
         'red': '#d83519' 
       },
 
       backgroundImage: {
         'spotify-theme': "url('../assets/imgs/bursts.svg')",
-        'spotify-theme-moblie': "url('../assets/imgs/bursts-mobile.svg')"
+        'spotify-theme-moblie': "url('../assets/imgs/bursts_mobile.svg')"
       },
 
       backgroundSize: {
-        '175%': '175%',
-        '195%': '195%',
+        '100%': 'auto 100%',
+        '181%': 'auto 181%',
       },
 
       backgroundPosition: {
-        'banner': '46% 4%',
-        'banner-mobile': 'top 25% center',
+        'banner': 'right center',
+        'banner-mobile': 'center center',
       },
       
       fontSize: {

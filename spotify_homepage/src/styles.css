@@ -8,6 +8,6 @@
   }
 
   .button {
-    @apply inline-block rounded-full uppercase text-white text-sm md:text-base font-bold px-8 py-3 hover:scale-105;
+    @apply inline-block rounded-full uppercase text-sm md:text-base font-bold px-8 py-3 hover:scale-105;
   }
 }
