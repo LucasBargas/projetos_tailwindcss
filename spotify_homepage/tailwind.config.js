@@ -28,8 +28,8 @@ module.exports = {
       },
 
       backgroundImage: {
-        'spotify-theme': "url('../assets/imgs/bursts.svg')",
-        'spotify-theme-moblie': "url('../assets/imgs/bursts_mobile.svg')"
+        'spotify-theme': "url('https://spotifyhomepage.projetoslucasbargas.com/assets/imgs/bursts.svg')",
+        'spotify-theme-moblie': "url('https://spotifyhomepage.projetoslucasbargas.com/assets/imgs/bursts_mobile.svg')"
       },
 
       backgroundSize: {
