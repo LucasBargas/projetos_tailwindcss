@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.html"],
+  content: ["./src/**/*.{html, js}"],
   theme: {
     extend: {
       spacing: {
@@ -23,7 +23,8 @@ module.exports = {
         'pink': '#ffcdd2',
         'red': '#d83519',
         'gray': '#919496',
-        'dark-gray': '#222326' 
+        'dark-gray': '#222326',
+        'modal': 'rgba(0, 0, 0, .9)' 
       },
 
       backgroundImage: {
@@ -55,6 +56,23 @@ module.exports = {
         'lg': '1024px',
         'xl': '1280px',
         '2xl': '1536px',
+      },
+
+      keyframes: {
+        modalAnimate: {
+          from: {
+            opacity: '0',
+            transform: 'translateY(-50px)',
+          },
+          to: {
+              opacity: '1',
+              transform: 'translateY(0)',
+          }
+        }
+      },
+      
+      animation: {
+        'show-modal': 'modalAnimate .6s forwards'
       }
     },
   },
