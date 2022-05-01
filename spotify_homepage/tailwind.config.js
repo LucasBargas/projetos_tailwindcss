@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.html"],
   theme: {
     extend: {
       spacing: {
@@ -56,5 +56,5 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: []
 }
