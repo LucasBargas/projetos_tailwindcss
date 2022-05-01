@@ -1,0 +1,15 @@
+{
+  "name": "facebook_login_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "lucas_bargas <lucas.bargasoficial@gmail.com> (https://projetoslucasbargas.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
