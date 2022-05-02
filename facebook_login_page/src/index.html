@@ -7,15 +7,45 @@
   <link rel="shortcut icon" href="assets/images/fb_icon.png" type="image/x-icon">
   <link rel="stylesheet" href="styles/main.css">
   <title>Facebook Login - Lucas Bargas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-  <section class="pt-24 pb-32 bg-fb-blue">
-    <div class="bg-red-700 w-full max-w-980 m-auto">
-      <p>Olá</p>
+  <section class="app-space pt-92 pb-132 bg-fb-blue">
+    <div class="app-container">
+      <div class="flex flex-col">
+        <div>
+          <figure>
+            <a href="index.html">
+              <img class="inline-block w-40" src="assets/images/fb_logo.png" alt="Facebook Logo">
+            </a>
+          </figure>
+          <h2 class="text-2xl text-fb-black mt-4">Logins recentes</h2>
+          <p class="text-15 text-fb-gray mb-6">Clique na sua foto ou adicione uma conta.</p>
+
+          <div class="flex gap-4">
+            <a class="inline-block relative z-10" href="index.html">
+              <figure class="rounded-tl-lg rounded-tr-lg overflow-hidden">
+                <img class="inline-block" src="assets/images/fb_user.jpg" alt="Facebook User">
+              </figure>
+              <div class="shadow-card rounded-bl-lg rounded-br-lg overflow-hidden p-3 text-center bg-white text-fb-black font-medium">Lucas</div>
+              <span class="flex items-center justify-center text-xs rounded-full absolute -top-1 -right-1 z-20 h-6 w-6 bg-fb-red text-white shadow-notification">25</span>
+              <span class="flex items-center justify-center absolute top-1 left-1 h-4 w-4 bg-black-opacity rounded-full">
+                <i class="text-white text-xs fa-solid fa-xmark"></i>
+              </span>
+            </a>
+
+            <a class="inline-block rounded-tl-lg rounded-tr-lg shadow-card h-40 w-40 bg-fb-card" href="index.html">
+              <figure class="h-full flex items-center justify-center">
+                <span class="flex items-center justify-center rounded-full w-10 h-10 bg-fb-btn-blue">
+                  <i class="inline-block text-2xl fa-solid fa-plus text-white"></i>
+                </span>
+              </figure>
+              <div class="shadow-card rounded-bl-lg rounded-br-lg overflow-hidden p-3 text-center bg-white text-fb-btn-blue font-medium">Adicionar conta</div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <footer>
-    Olá
-  </footer>
 </body>
 </html>
