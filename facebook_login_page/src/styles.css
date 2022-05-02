@@ -4,7 +4,7 @@
 
 @layer components {
   .app-space {
-    @apply pl-4 pr-4 lg:pl-0 lg:pr-0;
+    @apply pl-4 pr-5 lg:pl-0 lg:pr-0;
   }
 
   .app-container {

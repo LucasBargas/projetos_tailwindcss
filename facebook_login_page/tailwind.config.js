@@ -24,12 +24,19 @@ module.exports = {
         'fb-gray': '#606770',
         'fb-card': '#f5f6f7',
         'fb-red': '#fa3e3e',
+        'fb-border': '#dddfe2',
         'black-opacity': 'rgba(0, 0, 0, .3)'
       },
 
       boxShadow: {
         'card': '0 0 0 1px #dddfe2',
         'notification': '-1px 1px 2px 0 rgba(0, 0, 0, .3)',
+        'form': '0 2px 4px rgb(0, 0, 0, .1), 0 8px 16px rgb(0, 0, 0, .1)',
+        'focus': '0 0 0 2px #e7f3ff'
+      },
+
+      screens: {
+        '360': {'max': '360px'}
       }
     },
   },

@@ -10,38 +10,69 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-  <section class="app-space pt-92 pb-132 bg-fb-blue">
+  <section class="app-space pt-92 pb-132 min-h-[500px] bg-fb-blue">
     <div class="app-container">
-      <div class="flex flex-col">
-        <div>
+      <div class="flex lg:justify-between flex-col lg:flex-row items-center lg:items-start gap-5">
+        <div class="text-center lg:text-left">
           <figure>
             <a href="index.html">
               <img class="inline-block w-40" src="assets/images/fb_logo.png" alt="Facebook Logo">
             </a>
           </figure>
-          <h2 class="text-2xl text-fb-black mt-4">Logins recentes</h2>
+          <h2 class="text-2xl lg:text-28 text-fb-black mt-4">Logins recentes</h2>
           <p class="text-15 text-fb-gray mb-6">Clique na sua foto ou adicione uma conta.</p>
 
-          <div class="flex gap-4">
+          <div class="flex gap-4 360:block">
             <a class="inline-block relative z-10" href="index.html">
               <figure class="rounded-tl-lg rounded-tr-lg overflow-hidden">
                 <img class="inline-block" src="assets/images/fb_user.jpg" alt="Facebook User">
               </figure>
-              <div class="shadow-card rounded-bl-lg rounded-br-lg overflow-hidden p-3 text-center bg-white text-fb-black font-medium">Lucas</div>
+              <div class="shadow-card rounded-bl-lg rounded-br-lg overflow-hidden p-3 text-lg text-center bg-white text-fb-black font-medium">
+                Lucas
+              </div>
               <span class="flex items-center justify-center text-xs rounded-full absolute -top-1 -right-1 z-20 h-6 w-6 bg-fb-red text-white shadow-notification">25</span>
               <span class="flex items-center justify-center absolute top-1 left-1 h-4 w-4 bg-black-opacity rounded-full">
                 <i class="text-white text-xs fa-solid fa-xmark"></i>
               </span>
             </a>
 
-            <a class="inline-block rounded-tl-lg rounded-tr-lg shadow-card h-40 w-40 bg-fb-card" href="index.html">
+            <a class="inline-block rounded-tl-lg rounded-tr-lg shadow-card h-40 w-40 bg-fb-card 360:mt-3" href="index.html">
               <figure class="h-full flex items-center justify-center">
                 <span class="flex items-center justify-center rounded-full w-10 h-10 bg-fb-btn-blue">
                   <i class="inline-block text-2xl fa-solid fa-plus text-white"></i>
                 </span>
               </figure>
-              <div class="shadow-card rounded-bl-lg rounded-br-lg overflow-hidden p-3 text-center bg-white text-fb-btn-blue font-medium">Adicionar conta</div>
+              <div class="shadow-card rounded-bl-lg rounded-br-lg overflow-hidden p-3 text-lg text-center bg-white text-fb-btn-blue font-medium">
+                Adicionar conta
+              </div>
             </a>
+          </div>
+        </div>
+        
+        <div class="w-full md:w-[396px] lg:pt-8">
+          <div class="bg-white rounded-lg shadow-form pt-5 pl-5 pr-5 pb-7">
+            <div class="pb-5 border-b border-fb-border">
+              <form class="block">
+                <input class="block w-full outline-none py-[13px] px-4 rounded-md text-lg text-fb-black border-[1px] border-fb-border focus:border-fb-btn-blue focus:shadow-focus" type="text" placeholder="Email ou telefone">
+                <input class="block w-full outline-none mt-3 py-[13px] px-4 rounded-md text-lg text-fb-black border-[1px] border-fb-border focus:border-fb-btn-blue focus:shadow-focus" type="password" placeholder="Senha">
+                <button class="block w-full mt-3 h-12 rounded-md bg-fb-btn-blue text-white text-xl font-bold">
+                  Entrar
+                </button>
+              </form>
+              <div class="text-center pt-3">
+                <a class="text-fb-btn-blue hover:underline" href="index.html">Esqueceu a senha?</a>
+              </div>
+            </div>
+  
+            <div class="text-center pt-6">
+              <a class="inline-block h-12 rounded-md bg-fb-btn-green px-4" href="index.html">
+                <span class="flex items-center h-full text-white text-xl font-bold">Criar nova conta</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="text-center text-fb-black pt-6">
+            <p class="text-sm"><a class="font-bold hover:underline" href="index.html">Criar uma página</a> para uma celebridade, uma marca ou uma empresa.</p>
           </div>
         </div>
       </div>
