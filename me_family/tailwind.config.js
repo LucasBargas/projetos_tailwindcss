@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -8,8 +10,6 @@ module.exports = {
         'sm': '768px',
         'md': '820px',
         '2xl': '1440px',
-        '390': {'max': '390px'},
-        '276': {'max': '276px'},
       },
 
       maxWidth: {
@@ -23,6 +23,13 @@ module.exports = {
         'text-color': '#444444',
         'menu-mobile': 'rgba(22, 30, 56, 0.9)'
       }
+    },
+
+    screens: {
+      'xs': '414px',
+      '390': {'max': '390px'},
+      '276': {'max': '276px'},
+      ...defaultTheme.screens,
     },
 
     fontFamily: {
