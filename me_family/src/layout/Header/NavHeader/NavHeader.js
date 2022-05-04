@@ -4,7 +4,7 @@ import { IoClose } from 'react-icons/io5';
 import { NavLink } from 'react-router-dom';
 
 const NavHeader = () => {
-  const [menuMobile, setMenuMobile] = useState(true);
+  const [menuMobile, setMenuMobile] = useState(null);
 
   const handleOutsideClick = ({ target, currentTarget }) => {
     if (target === currentTarget) setMenuMobile(null);
