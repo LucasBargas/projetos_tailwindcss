@@ -28,16 +28,26 @@ const InitialSlider = () => {
     Array.from(sliderDots.current.children)[slideActive].classList.remove('bg-yellow-500');
   }, [slideActive]);
 
+  const handleLeftSide = (sliderItems) => {
+    if (slideActive > 0) setSlideActive(slideActive - 1);
+    else if (slideActive === 0) setSlideActive(sliderItems.length - 1);
+  }
+
+  const handleRightSide = (sliderItems) => {
+    if (slideActive < sliderItems.length - 1) setSlideActive(slideActive + 1);
+    else if (slideActive === sliderItems.length - 1) setSlideActive(0);
+  }
+
   const handleControllerSlider = ({ target }) => {
     const sliderItems = Array.from(slider.current.children);
-    if (target.id === 'btn-left') {
-      if (slideActive > 0) setSlideActive(slideActive - 1);
-      else if (slideActive === 0) setSlideActive(sliderItems.length - 1);
+    if (target.id === 'btn-left') handleLeftSide(sliderItems);
+    else if (target.id === 'btn-right') handleRightSide(sliderItems);
+  }
 
-    } else if (target.id === 'btn-right') {
-      if (slideActive < sliderItems.length - 1) setSlideActive(slideActive + 1);
-      else if (slideActive === sliderItems.length - 1) setSlideActive(0);
-    }
+  const handleKeyDown = ({ key }) => {
+    const sliderItems = Array.from(slider.current.children);
+    if (key === 'ArrowLeft') handleLeftSide(sliderItems);
+    else if (key === 'ArrowRight') handleRightSide(sliderItems);
   }
 
   return (
@@ -49,14 +59,14 @@ const InitialSlider = () => {
       </div>
 
       <div ref={sliderDots} className='absolute bottom-0 z-40 p-4 w-full flex justify-center'>
-        <span onClick={handleDotClick} className='inline-block bg-yellow-500 mx-[2px] h-4 w-4 rounded-full cursor-pointer indent-[-7000px]'>0</span>
-        <span onClick={handleDotClick} className='inline-block bg-yellow-500 mx-[2px] h-4 w-4 rounded-full cursor-pointer indent-[-7000px]'>1</span>
-        <span onClick={handleDotClick} className='inline-block bg-yellow-500 mx-[2px] h-4 w-4 rounded-full cursor-pointer indent-[-7000px]'>2</span>
+        <span onClick={handleDotClick} className='inline-block bg-yellow-500 mx-[2px] h-3 w-3 rounded-full cursor-pointer indent-[-7000px]'>0</span>
+        <span onClick={handleDotClick} className='inline-block bg-yellow-500 mx-[2px] h-3 w-3 rounded-full cursor-pointer indent-[-7000px]'>1</span>
+        <span onClick={handleDotClick} className='inline-block bg-yellow-500 mx-[2px] h-3 w-3 rounded-full cursor-pointer indent-[-7000px]'>2</span>
       </div>
 
       <div className='flex justify-between px-4 absolute top-1/2 z-50 w-full'>
-        <button id='btn-left' onClick={handleControllerSlider} className='bg-red-500'>Esquerda</button>
-        <button id='btn-right' onClick={handleControllerSlider} className='bg-red-500'>Direita</button>
+        <button id='btn-left' onKeyDown={handleKeyDown} onClick={handleControllerSlider} className='bg-red-500'>Esquerda</button>
+        <button id='btn-right' onKeyDown={handleKeyDown} onClick={handleControllerSlider} className='bg-red-500'>Direita</button>
       </div>
     </section>
   )
