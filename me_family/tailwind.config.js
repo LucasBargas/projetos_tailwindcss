@@ -22,6 +22,12 @@ module.exports = {
         'sky-blue': '#006fbe',
         'text-color': '#444444',
         'menu-mobile': 'rgba(22, 30, 56, 0.9)'
+      },
+
+      backgroundImage: {
+        'slider-one': "url('../assets/images/slide-1.jpg')",
+        'slider-two': "url('../assets/images/slide-2.jpg')",
+        'slider-three': "url('../assets/images/slide-3.jpg')",
       }
     },
 
