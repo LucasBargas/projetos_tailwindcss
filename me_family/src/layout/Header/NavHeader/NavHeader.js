@@ -13,17 +13,22 @@ const NavHeader = () => {
 
   const handleClick = ({ target }) => {
     if (menuMobile) setMenuMobile(null);
-    if (target.classList.contains('active')) target.classList.add('text-sky-blue');
 
     setTimeout(() => {
-      if (target.classList.contains('active')) target.classList.add('text-sky-blue');
+      if (target.classList.contains('active')) {
+        target.classList.add('text-sky-blue');
+        target.classList.remove('text-dark-blue');
+      }
     }, 50);
   }
 
   useEffect(() => {
     const navLinksArr = Array.from(navLinks.current.children);
     navLinksArr.forEach(link => {
-      if (link.children[0].classList.contains('active')) link.children[0].classList.add('text-sky-blue');
+      if (link.children[0].classList.contains('active')) {
+        link.children[0].classList.add('text-sky-blue');
+        link.children[0].classList.remove('text-dark-blue');
+      }
     })
   }, []);
 
@@ -32,7 +37,7 @@ const NavHeader = () => {
       <nav onClick={handleOutsideClick} className={`${menuMobile ? 'flex' : 'hidden'} flex-col-reverse items-end fixed top-0 left-0 z-50 h-screen w-full p-4 bg-menu-mobile 276:p-3 lg:flex lg:flex-row lg:static lg:h-auto lg:w-auto lg:bg-white lg:p-0`}>
         <ul ref={navLinks} className='flex flex-col px-5 py-2 bg-white h-screen w-full overflow-y-auto rounded-sm lg:h-auto lg:flex-row lg:p-0 lg:rounded-none lg:w-auto'>
           <li>
-            <NavLink onClick={handleClick} className='block font-medium text-[15px] py-3 lg:pl-8 lg:py-2 text-dark-blue' end to="/">Home</NavLink>
+            <NavLink onClick={handleClick} className='block font-medium text-[15px] py-3 lg:pl-8 lg:py-2 text-dark-blue' to="/">Home</NavLink>
           </li>
           <li>
             <NavLink onClick={handleClick} className='block font-medium text-[15px] py-3 lg:pl-8 lg:py-2 text-dark-blue' to="/our-story">Our Story</NavLink>
