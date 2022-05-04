@@ -51,11 +51,11 @@ const InitialSlider = () => {
   }
 
   return (
-    <section className='relative h-[calc(100vh-72px)] lg:h-[calc(80vh-72px)] xl:min-h-[500px] 2xl:h-[calc(80vh-72px)] 390:h-[calc(100vh-58px)]'>
+    <section className='relative bg-dark-blue h-[calc(100vh-72px)] lg:h-[calc(80vh-72px)] xl:min-h-[500px] 2xl:h-[calc(80vh-72px)] 390:h-[calc(100vh-58px)]'>
       <div ref={slider}>
-        <div className='opacity-0 absolute top-0 w-full z-30 bg-slider-one bg-center bg-cover h-[calc(100vh-72px)] lg:h-[calc(80vh-72px)] xl:min-h-[500px] 2xl:h-[calc(80vh-72px)] 390:h-[calc(100vh-58px)]'></div>
-        <div className='opacity-0 absolute top-0 w-full z-20 bg-slider-two bg-center bg-cover h-[calc(100vh-72px)] lg:h-[calc(80vh-72px)] xl:min-h-[500px] 2xl:h-[calc(80vh-72px)] 390:h-[calc(100vh-58px)]'></div>
-        <div className='opacity-0 absolute top-0 w-full z-10 bg-slider-three bg-center bg-cover h-[calc(100vh-72px)] lg:h-[calc(80vh-72px)] xl:min-h-[500px] 2xl:h-[calc(80vh-72px)] 390:h-[calc(100vh-58px)]'></div>
+        <div className='opacity-0 duration-500 absolute top-0 w-full z-30 bg-slider-one bg-center bg-cover h-[calc(100vh-72px)] lg:h-[calc(80vh-72px)] xl:min-h-[500px] 2xl:h-[calc(80vh-72px)] 390:h-[calc(100vh-58px)]'></div>
+        <div className='opacity-0 duration-500 absolute top-0 w-full z-20 bg-slider-two bg-center bg-cover h-[calc(100vh-72px)] lg:h-[calc(80vh-72px)] xl:min-h-[500px] 2xl:h-[calc(80vh-72px)] 390:h-[calc(100vh-58px)]'></div>
+        <div className='opacity-0 duration-500 absolute top-0 w-full z-10 bg-slider-three bg-center bg-cover h-[calc(100vh-72px)] lg:h-[calc(80vh-72px)] xl:min-h-[500px] 2xl:h-[calc(80vh-72px)] 390:h-[calc(100vh-58px)]'></div>
       </div>
 
       <div ref={sliderDots} className='absolute bottom-0 z-40 p-4 w-full flex justify-center'>
