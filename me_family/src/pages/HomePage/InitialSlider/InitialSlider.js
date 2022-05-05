@@ -14,8 +14,12 @@ const InitialSlider = () => {
 
   useEffect(() => {
     const sliderItems = Array.from(slider.current.children);
-    sliderItems.forEach(slide => slide.classList.remove('opacity-100'));
+    sliderItems.forEach(slide => {
+      slide.classList.remove('opacity-100');
+      slide.classList.add('opacity-0');
+    });
     sliderItems[slideActive].classList.add('opacity-100');
+    sliderItems[slideActive].classList.remove('opacity-0');
   }, [slideActive]);
 
   useEffect(() => {
@@ -53,7 +57,7 @@ const InitialSlider = () => {
   return (
     <section className='relative bg-dark-blue h-[calc(100vh-72px)] lg:h-[calc(80vh-72px)] xl:min-h-[500px] 2xl:h-[calc(80vh-72px)] 390:h-[calc(100vh-58px)]'>
       <div ref={slider}>
-        <div className='opacity-0 duration-500 absolute top-0 w-full z-30 bg-slider-one bg-center bg-cover h-[calc(100vh-72px)] lg:h-[calc(80vh-72px)] xl:min-h-[500px] 2xl:h-[calc(80vh-72px)] 390:h-[calc(100vh-58px)]'></div>
+        <div className='opacity-100 duration-500 absolute top-0 w-full z-30 bg-slider-one bg-center bg-cover h-[calc(100vh-72px)] lg:h-[calc(80vh-72px)] xl:min-h-[500px] 2xl:h-[calc(80vh-72px)] 390:h-[calc(100vh-58px)]'></div>
         <div className='opacity-0 duration-500 absolute top-0 w-full z-20 bg-slider-two bg-center bg-cover h-[calc(100vh-72px)] lg:h-[calc(80vh-72px)] xl:min-h-[500px] 2xl:h-[calc(80vh-72px)] 390:h-[calc(100vh-58px)]'></div>
         <div className='opacity-0 duration-500 absolute top-0 w-full z-10 bg-slider-three bg-center bg-cover h-[calc(100vh-72px)] lg:h-[calc(80vh-72px)] xl:min-h-[500px] 2xl:h-[calc(80vh-72px)] 390:h-[calc(100vh-58px)]'></div>
       </div>
