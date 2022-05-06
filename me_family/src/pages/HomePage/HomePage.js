@@ -1,11 +1,12 @@
 import React from 'react';
+import AboutSection from './AboutSection/AboutSection';
 import InitialSlider from './InitialSlider/InitialSlider';
 
 const HomePage = () => {
   return (
     <>
       <InitialSlider />
-      <p>Olá</p>
+      <AboutSection />
     </>
   )
 }

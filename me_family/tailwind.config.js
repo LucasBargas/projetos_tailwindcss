@@ -17,10 +17,15 @@ module.exports = {
         '1320': '1320px',
       },
 
+      spacing: {
+        '15': '60px'
+      },
+
       colors: {
+        'light-gray': '#dddddd',
         'dark-blue': '#24325d',
         'sky-blue': '#006fbe',
-        'text-color': '#444444',
+        'font-color': '#444444',
         'menu-mobile': 'rgba(22, 30, 56, 0.9)',
         'slider-btn': 'rgba(255, 255, 255, .4)',
         'slider-btn-opacity': 'rgba(255, 255, 255, .2)'
@@ -45,6 +50,10 @@ module.exports = {
       'poppins': 'Poppins, sans-serif',
       'open-sans': 'Open Sans, sans-serif',
     },
+
+    fontSize: {
+      '32': '32px'
+    }
   },
   plugins: [],
 }
