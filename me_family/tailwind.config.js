@@ -35,6 +35,10 @@ module.exports = {
         'slider-one': "url('../assets/images/slide-1.jpg')",
         'slider-two': "url('../assets/images/slide-2.jpg')",
         'slider-three': "url('../assets/images/slide-3.jpg')",
+      },
+
+      fontSize: {
+        '32': '32px'
       }
     },
 
@@ -50,10 +54,6 @@ module.exports = {
       'poppins': 'Poppins, sans-serif',
       'open-sans': 'Open Sans, sans-serif',
     },
-
-    fontSize: {
-      '32': '32px'
-    }
   },
   plugins: [],
 }
