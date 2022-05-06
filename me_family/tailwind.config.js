@@ -21,7 +21,9 @@ module.exports = {
         'dark-blue': '#24325d',
         'sky-blue': '#006fbe',
         'text-color': '#444444',
-        'menu-mobile': 'rgba(22, 30, 56, 0.9)'
+        'menu-mobile': 'rgba(22, 30, 56, 0.9)',
+        'slider-btn': 'rgba(255, 255, 255, .4)',
+        'slider-btn-opacity': 'rgba(255, 255, 255, .2)'
       },
 
       backgroundImage: {

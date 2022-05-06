@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import { MdArrowBackIosNew } from 'react-icons/md';
+import { MdArrowForwardIos } from 'react-icons/md';
 
 const InitialSlider = () => {
   const [slideActive, setSlideActive] = useState(0);
@@ -24,12 +26,12 @@ const InitialSlider = () => {
 
   useEffect(() => {
     Array.from(sliderDots.current.children).forEach(dot => {
-      dot.classList.remove('bg-purple-500');
-      dot.classList.add('bg-yellow-500');
+      dot.classList.remove('bg-sky-blue');
+      dot.classList.add('bg-slider-btn');
     })
 
-    Array.from(sliderDots.current.children)[slideActive].classList.add('bg-purple-500');
-    Array.from(sliderDots.current.children)[slideActive].classList.remove('bg-yellow-500');
+    Array.from(sliderDots.current.children)[slideActive].classList.add('bg-sky-blue');
+    Array.from(sliderDots.current.children)[slideActive].classList.remove('bg-slider-btn');
   }, [slideActive]);
 
   const handleLeftSide = (sliderItems) => {
@@ -44,8 +46,8 @@ const InitialSlider = () => {
 
   const handleControllerSlider = ({ target }) => {
     const sliderItems = Array.from(slider.current.children);
-    if (target.id === 'btn-left') handleLeftSide(sliderItems);
-    else if (target.id === 'btn-right') handleRightSide(sliderItems);
+    if (target.closest('button#btn-left')) handleLeftSide(sliderItems);
+    else if (target.closest('button#btn-right')) handleRightSide(sliderItems);
   }
 
   const handleKeyDown = ({ key }) => {
@@ -63,14 +65,28 @@ const InitialSlider = () => {
       </div>
 
       <div ref={sliderDots} className='absolute bottom-0 z-40 p-4 w-full flex justify-center'>
-        <span onClick={handleDotClick} className='inline-block bg-yellow-500 mx-[2px] h-3 w-3 rounded-full cursor-pointer indent-[-7000px]'>0</span>
-        <span onClick={handleDotClick} className='inline-block bg-yellow-500 mx-[2px] h-3 w-3 rounded-full cursor-pointer indent-[-7000px]'>1</span>
-        <span onClick={handleDotClick} className='inline-block bg-yellow-500 mx-[2px] h-3 w-3 rounded-full cursor-pointer indent-[-7000px]'>2</span>
+        <span onClick={handleDotClick} className='inline-block bg-slider-btn mx-[2px] h-3 w-3 rounded-full cursor-pointer indent-[-7000px]'>0</span>
+        <span onClick={handleDotClick} className='inline-block bg-slider-btn mx-[2px] h-3 w-3 rounded-full cursor-pointer indent-[-7000px]'>1</span>
+        <span onClick={handleDotClick} className='inline-block bg-slider-btn mx-[2px] h-3 w-3 rounded-full cursor-pointer indent-[-7000px]'>2</span>
       </div>
 
       <div className='flex justify-between px-4 absolute top-1/2 z-50 w-full'>
-        <button id='btn-left' onKeyDown={handleKeyDown} onClick={handleControllerSlider} className='bg-red-500'>Esquerda</button>
-        <button id='btn-right' onKeyDown={handleKeyDown} onClick={handleControllerSlider} className='bg-red-500'>Direita</button>
+        <button id='btn-left' 
+          onKeyDown={handleKeyDown} 
+          onClick={handleControllerSlider} 
+          className='flex items-center justify-center bg-red-500 w-[54px] h-[54px] rounded-full duration-500 bg-slider-btn-opacity hover:bg-slider-btn'
+        >
+          <MdArrowBackIosNew className='text-slider-btn text-2xl' />
+        </button>
+
+        <button 
+          id='btn-right' 
+          onKeyDown={handleKeyDown} 
+          onClick={handleControllerSlider} 
+          className='flex items-center justify-center bg-red-500 w-[54px] h-[54px] rounded-full duration-500  bg-slider-btn-opacity hover:bg-slider-btn'
+        >
+          <MdArrowForwardIos className='text-slider-btn text-2xl' />
+        </button>
       </div>
     </section>
   )
