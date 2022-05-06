@@ -37,6 +37,10 @@ module.exports = {
         'slider-three': "url('../assets/images/slide-3.jpg')",
       },
 
+      boxShadow: {
+        'header': '0px 2px 15px rgba(36, 50, 93, .1)',
+      },
+
       fontSize: {
         '32': '32px'
       }
