@@ -10,7 +10,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header />
-      <main className='mt-[58px] xs:mt-[72px]'>
+      <main className='390:mt-[66px] xs:mt-[72px]'>
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='our-story' element={<OurStory />} />
