@@ -1,8 +1,11 @@
 import React from 'react';
+import PageTitle from '../../components/PageTitle/PageTitle';
 
 const Events = () => {
   return (
-    <div>Events</div>
+    <>
+      <PageTitle pageCurrent='Events' />
+    </>
   )
 }
 

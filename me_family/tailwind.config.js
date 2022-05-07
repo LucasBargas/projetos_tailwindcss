@@ -48,7 +48,6 @@ module.exports = {
     },
 
     screens: {
-      'xs': '480px',
       '390': {'max': '390px'},
       '276': {'max': '276px'},
       ...defaultTheme.screens,

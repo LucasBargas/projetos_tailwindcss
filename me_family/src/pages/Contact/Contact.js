@@ -1,8 +1,11 @@
 import React from 'react';
+import PageTitle from '../../components/PageTitle/PageTitle';
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+      <PageTitle pageCurrent='Contact' />
+    </>
   )
 }
 

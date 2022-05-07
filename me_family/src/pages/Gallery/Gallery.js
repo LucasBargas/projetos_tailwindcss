@@ -1,8 +1,11 @@
 import React from 'react';
+import PageTitle from '../../components/PageTitle/PageTitle';
 
 const Gallery = () => {
   return (
-    <div>Gallery</div>
+    <>
+      <PageTitle pageCurrent='Gallery' />
+    </>
   )
 }
 

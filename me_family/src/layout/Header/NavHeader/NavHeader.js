@@ -1,11 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { IoClose } from 'react-icons/io5';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const NavHeader = () => {
   const [menuMobile, setMenuMobile] = useState(null);
   const navLinks = useRef();
+  const { pathname } = useLocation();
 
   const handleOutsideClick = ({ target, currentTarget }) => {
     if (target === currentTarget) setMenuMobile(null);
@@ -30,7 +31,9 @@ const NavHeader = () => {
         link.children[0].classList.remove('text-dark-blue');
       }
     })
-  }, []);
+
+    if (pathname === '/') navLinksArr[0].children[0].classList.add('text-sky-blue');
+  }, [pathname]);
 
   return (
     <div>
