@@ -10,8 +10,8 @@ const InitialSlider = () => {
   const handleDotClick = ({ target }) => {
     setSlideActive(Number(target.innerText));
 
-    target.classList.add('bg-purple-500');
-    target.classList.remove('bg-yellow-500');
+    target.classList.add('bg-sky-blue');
+    target.classList.remove('bg-slider-btn');
   }
 
   useEffect(() => {
