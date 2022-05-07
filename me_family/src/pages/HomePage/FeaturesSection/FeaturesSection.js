@@ -46,7 +46,7 @@ const FeaturesSection = () => {
                   {icon}
                 </span>
               </figure>
-              <div>
+              <div className='pb-6 pt-4 relative after:absolute after:bottom-3.5 after:left-1/2 after:h-[2px] after:-translate-x-1/2 after:w-[50px] after:bg-sky-blue after:-trans'>
                 <h3 className='text-lg font-raleway font-semibold'>{title}</h3>
               </div>
               <div>
