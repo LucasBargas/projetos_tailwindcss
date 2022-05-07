@@ -27,7 +27,7 @@ const ButtonReturn = () => {
 
   return (
     <button 
-      className={`animate-show-button fixed right-4 bottom-4 flex items-center justify-center w-10 h-10 rounded-full bg-sky-blue hover:opacity-80 ${button ? `${'opacity-100'} ${'visible'} ${'duration-500'}` : `${'opacity-0'} ${'invisible'} ${'duration-500'}`}`}
+      className={`animate-show-button fixed right-4 bottom-4 z-[58] flex items-center justify-center w-10 h-10 rounded-full bg-sky-blue hover:opacity-80 ${button ? `${'opacity-100'} ${'visible'} ${'duration-500'}` : `${'opacity-0'} ${'invisible'} ${'duration-500'}`}`}
       onClick={handleClick}
     >
     <FiArrowUp className='text-white text-xl' />
