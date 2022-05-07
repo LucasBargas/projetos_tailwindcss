@@ -44,7 +44,7 @@ module.exports = {
 
       fontSize: {
         '32': '32px'
-      }
+      },
     },
 
     screens: {

@@ -5,6 +5,7 @@ import OurStory from './pages/OurStory/OurStory';
 import Events from './pages/Events/Events';
 import Gallery from './pages/Gallery/Gallery';
 import Contact from './pages/Contact/Contact';
+import ButtonReturn from './layout/ButtonReturn.js/ButtonReturn';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path='contact' element={<Contact />} />
         </Routes>
       </main>
+      <ButtonReturn />
     </BrowserRouter>
   )
 }
