@@ -6,6 +6,7 @@ import Events from './pages/Events/Events';
 import Gallery from './pages/Gallery/Gallery';
 import Contact from './pages/Contact/Contact';
 import ButtonReturn from './layout/ButtonReturn.js/ButtonReturn';
+import NotFound from './pages/NotFound/NotFound';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='events' element={<Events />} />
           <Route path='gallery' element={<Gallery />} />
           <Route path='contact' element={<Contact />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </main>
       <ButtonReturn />
