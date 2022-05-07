@@ -5,7 +5,7 @@ import aboutImage from '../../../assets/images/about.jpg'
 
 const AboutSection = () => {
   return (
-    <section className='app-space py-15 font-open-sans'>
+    <section className='app-space py-15 text-font-color font-open-sans'>
       <div className='app-container'>
         <HomeSectionTitle>My & Family</HomeSectionTitle>
         <div className='text-center pt-10 pb-6'>
