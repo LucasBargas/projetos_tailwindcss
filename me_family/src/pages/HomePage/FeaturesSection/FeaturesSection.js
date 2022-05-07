@@ -38,7 +38,7 @@ const FeaturesSection = () => {
   return (
     <section className='app-space py-15 text-font-color font-open-sans'>
       <div className='app-container'>
-        <div className='grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-y-8 lg:gap-[28px]'>
+        <div className='grid gap-y-8 sm:grid-cols-2 sm:gap-x-[25px] lg:grid-cols-3 lg:gap-[28px]'>
           {features.map(({ icon, title, text }) => (
             <div key={title} className='text-center'>
               <figure className='flex justify-center'>
@@ -50,7 +50,7 @@ const FeaturesSection = () => {
                 <h3 className='text-lg font-raleway font-semibold'>{title}</h3>
               </div>
               <div>
-                <p className='text-sm'>{text}</p>
+                <p className='text-sm leading-6'>{text}</p>
               </div>
             </div>
           ))}
