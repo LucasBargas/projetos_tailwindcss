@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage/HomePage';
 import OurStory from './pages/OurStory/OurStory';
 import Events from './pages/Events/Events';
 import Contact from './pages/Contact/Contact';
-import ButtonReturn from './layout/ButtonReturn.js/ButtonReturn';
+import ButtonReturn from './layout/ButtonReturn/ButtonReturn';
 import NotFound from './pages/NotFound/NotFound';
 
 const App = () => {

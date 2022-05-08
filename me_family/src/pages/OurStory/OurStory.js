@@ -5,6 +5,7 @@ import OurStoryTwo from './OurStoryTwo/OurStoryTwo';
 import OurStoryThree from './OurStoryThree/OurStoryThree';
 import OurStoryFour from './OurStoryFour/OurStoryFour';
 import OurStoryFive from './OurStoryFive/OurStoryFive';
+import Members from './Members/Members';
 
 const OurStory = () => {
   return (
@@ -19,6 +20,7 @@ const OurStory = () => {
           <OurStoryFive />
         </div>
       </section>
+      <Members />
     </>
   )
 }
