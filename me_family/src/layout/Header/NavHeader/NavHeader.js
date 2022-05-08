@@ -49,9 +49,6 @@ const NavHeader = () => {
             <NavLink onClick={handleClick} className='block font-medium text-[15px] py-3 lg:pl-8 lg:py-2 text-dark-blue duration-500 hover:text-sky-blue' to="/events">Events</NavLink>
           </li>
           <li>
-            <NavLink onClick={handleClick} className='block font-medium text-[15px] py-3 lg:pl-8 lg:py-2 text-dark-blue duration-500 hover:text-sky-blue' to="/gallery">Gallery</NavLink>
-          </li>
-          <li>
             <NavLink onClick={handleClick} className='block font-medium text-[15px] py-3 lg:pl-8 lg:py-2 text-dark-blue duration-500 hover:text-sky-blue' to="/contact">Contact</NavLink>
           </li>
         </ul>
