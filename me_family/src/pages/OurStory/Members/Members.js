@@ -1,4 +1,3 @@
-import React from 'react';
 import memberOne from '../../../assets/images/our-story/member-1.jpg';
 import memberTwo from '../../../assets/images/our-story/member-2.jpg';
 import memberThree from '../../../assets/images/our-story/member-3.jpg';
@@ -8,6 +7,7 @@ const Members = () => {
     <section className='app-space py-[60px]'>
       <div className='app-container'>
         <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-5 text-font-color font-open-sans'>
+
           <div>
             <figure className='overflow-hidden'>
               <img src={memberOne} alt="" />
@@ -40,6 +40,7 @@ const Members = () => {
             </div>
             <p className='italic text-sm text-[#777777] leading-6'>Amet labore numquam corrupti est. Nostrum amet voluptas consectetur dolor voluptatem architecto distinctio consequuntur eligendi. Quam impedit enim aut nesciunt aut dicta quam exercitationem. Reprehenderit exercitationem magnam. Ullam similique ut voluptas totam nobis porro accusamus nulla omnis.</p>
           </div>
+
         </div>
       </div>
     </section>
