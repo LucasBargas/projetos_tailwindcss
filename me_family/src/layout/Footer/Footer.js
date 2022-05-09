@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <p className="leading-6 text-sm">Esta aplicação web é uma réplica desenvolvida, a fins estudantis, por <a className="font-bold hover:underline" target="_blank" href="https://projetoslucasbargas.com/" rel="noopener noreferrer">Lucas Bargas</a> com base em uma aplicação encontrada na web. Porém, toda a codificação é própria.</p>
+            <p className="leading-6 text-sm">Esta aplicação web é uma réplica desenvolvida, a fins estudantis, por <a className="font-bold hover:underline" target="_blank" href="https://projetoslucasbargas.com/" rel="noopener noreferrer">Lucas Bargas</a>, com base em uma aplicação encontrada na web. Porém, toda a codificação é própria.</p>
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './layout/Header/Header';
 import HomePage from './pages/HomePage/HomePage';
@@ -7,8 +8,15 @@ import Contact from './pages/Contact/Contact';
 import ButtonReturn from './layout/ButtonReturn/ButtonReturn';
 import NotFound from './pages/NotFound/NotFound';
 import Footer from './layout/Footer/Footer';
+import Modal from './layout/Modal/Modal';
 
 const App = () => {
+  const [modal, setModal] = useState(true);
+
+  useEffect(() => {
+    document.body.style.overflow = modal ? 'hidden' : 'auto';
+  }, [modal]); 
+
   return (
     <BrowserRouter>
       <Header />
@@ -23,6 +31,7 @@ const App = () => {
       </main>
       <ButtonReturn />
       <Footer />
+      {modal && <Modal modal={modal} setModal={setModal} />}
     </BrowserRouter>
   )
 }
