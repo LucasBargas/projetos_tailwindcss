@@ -6,6 +6,7 @@ import Events from './pages/Events/Events';
 import Contact from './pages/Contact/Contact';
 import ButtonReturn from './layout/ButtonReturn/ButtonReturn';
 import NotFound from './pages/NotFound/NotFound';
+import Footer from './layout/Footer/Footer';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         </Routes>
       </main>
       <ButtonReturn />
+      <Footer />
     </BrowserRouter>
   )
 }
