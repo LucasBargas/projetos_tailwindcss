@@ -39,7 +39,8 @@ module.exports = {
 
       boxShadow: {
         'header': '0px 2px 15px rgba(36, 50, 93, .1)',
-        'feature': '0px 0 25px rgba(0, 0, 0, .15)'
+        'feature': '0px 0 25px rgba(0, 0, 0, .15)',
+        'events': '0px 2px 15px rgb(0, 0, 0, .1)'
       },
 
       fontSize: {
