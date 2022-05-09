@@ -11,7 +11,7 @@ const Events = () => {
           <div className='flex flex-col xl:flex-row gap-8 text-font-color font-open-sans'>
             <div>
               <figure className='overflow-hidden'>
-                <img className='w-full duration-300 hover:scale-110' src={eventsOne} alt="" />
+                <img className='w-full duration-300 hover:scale-110' src={eventsOne} alt="Events 1" />
               </figure>
 
               <div className='w-[88%] m-auto p-[30px] shadow-events bg-white relative top-[-60px]'>
@@ -23,7 +23,7 @@ const Events = () => {
 
             <div>
               <figure className='overflow-hidden'>
-                <img className='w-full duration-300 hover:scale-110' src={eventsTwo} alt="" />
+                <img className='w-full duration-300 hover:scale-110' src={eventsTwo} alt="Events 2" />
               </figure>
 
               <div className='w-[88%] m-auto p-[30px] shadow-events bg-white relative top-[-60px]'>

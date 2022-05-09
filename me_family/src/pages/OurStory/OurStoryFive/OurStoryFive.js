@@ -13,7 +13,7 @@ const OurStoryFive = () => {
       </div>
 
       <figure className='flex-1 w-full'>
-        <img src={featuredMembersFour} alt="" />
+        <img src={featuredMembersFour} alt="Our Story 5" />
       </figure>
    </div>
   )

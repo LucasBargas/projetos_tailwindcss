@@ -7,7 +7,7 @@ const OurStoryFour = () => {
   return (
     <div className='py-[60px] flex flex-col gap-5 lg:flex-row text-font-color font-open-sans'>
       <figure className='flex-1 w-full'>
-        <img src={featuredMembersThree} alt="" />
+        <img src={featuredMembersThree} alt="Our Story 3" />
       </figure>
 
       <div className='flex-1'>

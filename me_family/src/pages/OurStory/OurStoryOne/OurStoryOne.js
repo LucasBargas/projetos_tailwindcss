@@ -19,7 +19,7 @@ const OurStoryOne = () => {
       </div>
 
       <figure className='flex-1 w-full'>
-        <img src={introImg} alt="" />
+        <img src={introImg} alt="IntroImage" />
       </figure>
    </div>
   )

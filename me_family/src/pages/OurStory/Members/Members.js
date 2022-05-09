@@ -10,7 +10,7 @@ const Members = () => {
 
           <div>
             <figure className='overflow-hidden'>
-              <img src={memberOne} alt="" />
+              <img src={memberOne} alt="Member 1" />
             </figure>
             <div className='py-4'>
               <h3 className='font-raleway font-bold text-lg'>Amanda Jepson</h3>
@@ -21,7 +21,7 @@ const Members = () => {
 
           <div>
             <figure className='overflow-hidden'>
-              <img src={memberTwo} alt="" />
+              <img src={memberTwo} alt="Member 2" />
             </figure>
             <div className='py-4'>
               <h3 className='font-raleway font-bold text-lg'>Niall Katz</h3>
@@ -32,7 +32,7 @@ const Members = () => {
 
           <div>
             <figure className='relative overflow-hidden'>
-              <img src={memberThree} alt="" />
+              <img src={memberThree} alt="Member 3" />
             </figure>
             <div className='py-4'>
               <h3 className='font-raleway font-bold text-lg'>Demi Lewis</h3>
