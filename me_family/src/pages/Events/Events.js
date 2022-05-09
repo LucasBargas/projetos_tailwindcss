@@ -1,3 +1,5 @@
+import React from 'react';
+import Head from '../../utils/Head';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import eventsOne from '../../assets/images/events/events-1.jpg';
 import eventsTwo from '../../assets/images/events/events-2.jpg';
@@ -5,6 +7,7 @@ import eventsTwo from '../../assets/images/events/events-2.jpg';
 const Events = () => {
   return (
     <>
+      <Head title='Lucas Bargas - MeFamily | Events' />
       <PageTitle pageCurrent='Events' />
       <section className='app-space py-[60px]'>
         <div className='app-container'>

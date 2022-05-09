@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from '../../utils/Head';
 import PageTitle from '../../components/PageTitle/PageTitle';
 import ContactDatas from './ContactDatas/ContactDatas';
 import ContactForm from './ContactForm/ContactForm';
@@ -6,6 +7,7 @@ import ContactForm from './ContactForm/ContactForm';
 const Contact = () => {
   return (
     <>
+      <Head title='Lucas Bargas - MeFamily | Contact' />
       <PageTitle pageCurrent='Contact' />
       <section className='app-container py-[60px]'>
         <div className='app-space'>
